@@ -34,15 +34,6 @@ def extract_and_organize_code(text):
     code_blocks = extract_python_code(text)
     return code_blocks
 
-def execute_code(code_blocks):
-    for i, code in enumerate(code_blocks):
-        print(f"Executing code block {i+1}:")
-        try:
-            exec(code)
-            print("Execution successful.\n")
-        except Exception as e:
-            print(f"Error executing code: {e}\n")
-
 def run_queryintake_agent(query):
     print("### Run query intake agent")
     print(f"User query: {query}")
@@ -210,6 +201,7 @@ class PythonAgentWorkflow:
         print("### Exit WORKFLOW")
         return None
 
+# demonstration
 query = """
 Load this data: https://raw.githubusercontent.com/fivethirtyeight/data/master/bad-drivers/bad-drivers.csv
 
