@@ -11,6 +11,7 @@
                 "analysis_settings": {Settings for data analysis}, "visualization_settings": {Settings for data visualization}, "report_template": "Template for generating reports", "readme_template": "Template for the README file", "agent_workflows": [Workflows for the AI agents],
                 "task":"{task number} the summary" ".
     Even if the user only provides a dataset file path in the query, we will consider it using the uploaded dataset. Otherwise, it should be false. Besides, use the user input to determine which task among below three the user is up for: 
+      
                 Task 1: Identifying significant Variables in Regression
                     - Use simulated data to determine the most influential variables.
                     - Methods: Linear regression-based feature selection.
@@ -26,7 +27,7 @@
                     - Test the significance of a coefficient in regression.
                     - Methods: t-tests, Mann-Whitney U tests.
                     - Metrics: Type I/II errors, p-values.
-    </td>
+  </td>
   </tr>
   <tr>
     <td style="font-weight:bold">DataCleanerAgent</td>
