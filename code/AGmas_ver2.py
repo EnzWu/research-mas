@@ -337,7 +337,7 @@ class VisualizingAgent(RoutedAgent):
                 You create executable visualizations Python code using Matplotlib and Seaborn based on visualization settings given from the input or visual aid with best fit, 
                 including scatterplots, feature importance charts, and diagnostic plots. 
                 The code should also include steps that create a local image file named "images" to store all the visualizations in it and return a response with a brief explanation of each plot for later report generation. 
-                Be sure to break down the code chunks in steps. 
+                Be sure to break down the whole python code into code chunks by different steps.
                 Make sure not to use a place holder but to write out the python codes with specific given file path and dataset parameters from previous input.
                 By executing the code, the visualization generated should be save to local file named 'images' for later reference in report markdown. 
                 Every file generated during the analysis process should be stored to the local file by certain python code for later reference in summary report.
@@ -486,7 +486,7 @@ async def main():
 
     query = """
     Load this data: https://raw.githubusercontent.com/fivethirtyeight/data/master/bad-drivers/bad-drivers.csv
-
+    Identify the most important parameter in the dataset and use it as target variable in later analysis.
     The dataset consists of 51 datapoints and has eight columns:
     - State
     - Number of drivers involved in fatal collisions per billion miles
