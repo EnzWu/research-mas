@@ -1155,7 +1155,13 @@ The result would be:
 
 ```
 </details>
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
+
     AnalysisAgent:
     Here's a complete guide on performing linear regression analysis on your cleaned dataset in Python, along with detailed explanations for each step. This will include model fitting, evaluation, and saving results for further reference.
 
@@ -1296,6 +1302,14 @@ The result would be:
     strong multicollinearity or other numerical problems.
     OLS model summary saved as ols_model_summary.txt
     Execution successful.
+
+```
+</details>
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
 
     --------------------------------------------------------------------------------
     AnalysisAgent:
@@ -1625,6 +1639,14 @@ The result would be:
     38    1.0  ...                      905.99
 
     [40 rows x 7 columns], 'ols_model': <statsmodels.regression.linear_model.RegressionResultsWrapper object at 0x148ac7230>, 'f': <_io.TextIOWrapper name='ols_model_summary.txt' mode='w' encoding='UTF-8'>}
+
+```
+</details>
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
     VisualizingAgent:
     Here’s the complete Python code to generate visualizations based on the linear regression analysis results. This code uses Matplotlib and Seaborn to create insightful graphics for understanding the model's predictions, evaluating feature importance, and analyzing the residuals. The visualizations are stored in an "images" folder which will be created if it does not already exist.
@@ -1712,7 +1734,13 @@ The result would be:
     Executing code block 1:
     Visualizations have been saved to the "images" directory.
     Execution successful.
+```
+</details>
 
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
     VisualizingAgent:
     Code executed. Result:
@@ -1745,6 +1773,13 @@ The result would be:
     9    -22.086209
     10    22.964970
     dtype: float64}
+```
+</details>
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
     ReportAgent:
     ```json
@@ -1764,3 +1799,5 @@ Possible solution: 1. Implement code check method with previous published messag
 Final report tends to contain limited information and a lot of the analysis donw are overlooked.
 
 Possible solution: 1. Try to get Report agent to combine all the regression summary generated to the local file. 2. Subscribe report agent to all types of messages published by previous agents.
+```
+</details>
