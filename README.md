@@ -583,7 +583,7 @@ if __name__ == "__main__":
 </details>
 
 The result would be:
-1.ConfigExtractorAgent
+Configuration Agent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -650,7 +650,7 @@ The result would be:
 
 ```
 </details>
-2.DataCleanerAgent
+2-ed Agent Code Execution Result
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -867,7 +867,7 @@ The result would be:
 ```
 </details>
 
-3.ModelerAgent
+3-rd Agent Code Execution Result
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1315,7 +1315,7 @@ The result would be:
 ```
 </details>
 
-4.AnalysisAgent
+4-th Agent Code Execution Result
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1750,7 +1750,7 @@ The result would be:
 ```
 </details>
 
-5.VisualizingAgent
+5-th Agent Code Execution Result
 
 <details>
 <summary><strong>Click to expand</strong></summary>
