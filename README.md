@@ -177,6 +177,10 @@ class DataCleanerAgent(RoutedAgent):
 </details>
 
 The ModelerAgent will handle model fitting and/or model training.
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+
 ```python
 @type_subscription(topic_type=modeling_topic_type)
 class ModelerAgent(RoutedAgent):
@@ -253,7 +257,12 @@ class ModelerAgent(RoutedAgent):
         else:
             print("Unexpected response format from model client.")
 ```
+</details>
+
 The AnalysisAgent will handle model diagnostic including feature selection, prediction evaluation, and hypothesis testing.
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
 ```python
 @type_subscription(topic_type=analysis_topic_type)
 class AnalysisAgent(RoutedAgent):
@@ -331,7 +340,13 @@ class AnalysisAgent(RoutedAgent):
         else:
             print("Unexpected response format from model client.")
 ```
+</details>
+
 The VisualizingAgent will handle image generation for the previous analysis with tools including Matplotlib and Seaborn.
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+
 ```python
 @type_subscription(topic_type=visualization_topic_type)
 class VisualizingAgent(RoutedAgent):
@@ -413,7 +428,13 @@ class VisualizingAgent(RoutedAgent):
         else:
             print("Unexpected response format from model client.")
 ```
+</details>
+
 The ReportAgent will handle the final report and README file generation based on previous results.
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+
 ```python
 @type_subscription(topic_type=summary_topic_type)
 class ReportAgent(RoutedAgent):
@@ -456,6 +477,8 @@ class ReportAgent(RoutedAgent):
             print(f"Error decoding JSON response: {e}")
             print("LLM Response:", response)
 ```
+</details>
+
 
 ## Workflow
 Now we can register the agents to the runtime. Because we used the type_subscription decorator, the runtime will automatically subscribe the agents to the correct topics. Besides, we can set up functions and tools for later dynamic code execution.
