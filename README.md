@@ -648,6 +648,11 @@ The result would be:
 
 ```
 </details>
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
     DataCleanerAgent:
     Code executed. Result:
@@ -758,6 +763,13 @@ The result would be:
     50               Wyoming  ...                                             122.04                           
 
     [51 rows x 8 columns]}
+```
+</details>
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
     ModelerAgent:
     To perform linear regression on the cleaned dataset using Python, we will follow a step-by-step approach, ensuring that we load the data, prepare it for the model, conduct feature selection, and then fit the linear regression model. Finally, we will save the results for later analysis. Below is the complete code with detailed explanations at each step.
@@ -847,6 +859,13 @@ The result would be:
     Predictions saved as predictions.csv
     Execution successful.
 
+```
+</details>
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
     ModelerAgent:
     Code executed. Result:
@@ -1133,6 +1152,9 @@ The result would be:
     3   142.39  136.366941
     30  159.85  181.936209
     13  139.15  116.185030}
+
+```
+</details>
     --------------------------------------------------------------------------------
     AnalysisAgent:
     Here's a complete guide on performing linear regression analysis on your cleaned dataset in Python, along with detailed explanations for each step. This will include model fitting, evaluation, and saving results for further reference.
