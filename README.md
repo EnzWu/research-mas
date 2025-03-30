@@ -492,6 +492,10 @@ class ReportAgent(RoutedAgent):
 
 ## Workflow
 Now we can register the agents to the runtime. Because we used the type_subscription decorator, the runtime will automatically subscribe the agents to the correct topics. Besides, we can set up functions and tools for later dynamic code execution.
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
 ```python
 load_dotenv()
 my_api = os.getenv("OPENAI_API_KEY")
@@ -544,9 +548,14 @@ async def register_agents():
     await ReportAgent.register(
         runtime, type=summary_topic_type, factory=lambda: ReportAgent(model_client=model_client,tool=data_cleaner_tool_schema))
 ```
+</details>
 
 ## Run the Workflow
 We can run the workflow by take in a user query and publish it to the ConfigExtractorAgent.
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
 ```python
 async def main():
     await register_agents()
@@ -571,6 +580,8 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 ```
+</details>
+
 The result would be:
 ```python
     --------------------------------------------------------------------------------
