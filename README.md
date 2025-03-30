@@ -49,6 +49,10 @@ summary_topic_type = "ReportAgent"
 A type_subscription decorator is defined before each agent class to specify the topic type it is subscribed to.
 
 The ConfigExtractorAgent will handle the user query and generate a json format response specifying analysis setting for later reference.
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+
 ```python
 @type_subscription(topic_type=config_extractor_topic_type)
 class ConfigExtractorAgent(RoutedAgent):
@@ -94,6 +98,8 @@ class ConfigExtractorAgent(RoutedAgent):
         print(f"{'-'*80}\n{self.id.type}:\n{response}")
         await self.publish_message(Message(response), topic_id=TopicId(data_clean_topic_type, source=self.id.key))
 ```
+</details>
+
 The DataCleanerAgent will handle dataset loading and cleaning.
 ```python
 @type_subscription(topic_type=data_clean_topic_type)
