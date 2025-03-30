@@ -102,6 +102,10 @@ class ConfigExtractorAgent(RoutedAgent):
 </details>
 
 The DataCleanerAgent will handle dataset loading and cleaning.
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+
 ```python
 @type_subscription(topic_type=data_clean_topic_type)
 class DataCleanerAgent(RoutedAgent):
@@ -170,6 +174,8 @@ class DataCleanerAgent(RoutedAgent):
         else:
             print("Unexpected response format from model client.")
 ```
+</details>
+
 The ModelerAgent will handle model fitting and/or model training.
 ```python
 @type_subscription(topic_type=modeling_topic_type)
