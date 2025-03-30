@@ -583,6 +583,7 @@ if __name__ == "__main__":
 </details>
 
 The result would be:
+
 Configuration Agent
 
 <details>
@@ -634,7 +635,7 @@ Configuration Agent
 ```
 </details>
 
-2.DataCleanerAgent
+DataCleanerAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -769,7 +770,7 @@ Configuration Agent
 ```
 </details>
 
-3.ModelerAgent
+ModelerAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1163,7 +1164,7 @@ Configuration Agent
 ```
 </details>
 
-4.AnalysisAgent
+AnalysisAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1654,7 +1655,7 @@ Configuration Agent
 ```
 </details>
 
-5.VisualizingAgent
+VisualizingAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1791,7 +1792,7 @@ Configuration Agent
 ```
 </details>
 
-6.ReportAgent
+ReportAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1805,6 +1806,7 @@ Configuration Agent
     "readme": "# README for Linear Regression Model\n\n## Overview\nThis README outlines the necessary steps to set up and utilize the linear regression model, including installation, usage, and hyperparameter modifications.\n\n## Prerequisites\n- Python 3.x\n- Required packages: `pandas`, `matplotlib`, `seaborn`\n\nYou can install the required packages using pip:\n```bash\npip install pandas matplotlib seaborn\n```\n\n## Setup\n1. **Clone the repository:**  \n   Clone the project from the repository to your local machine.\n2. **Data Files:**  \n   Ensure that you have the following CSV files in the project directory:\n   - `predictions.csv` (contains actual and predicted values)\n   - `model_coefficients.csv` (contains the coefficients for the features)\n\n## Generating Visualizations\nRun the Python script included in this project to generate visualizations:\n```bash\npython generate_visualizations.py\n```\nVisualizations will be saved in the `images` directory.\n\n## Changing Hyperparameters\nTo adjust hyperparameters or modify agent workflows, edit the relevant sections in the Python script. Look for parameters associated with:\n- Model training (e.g., learning rate, regularization)\n- Feature selection methods\n- Validation techniques\n\n## Use Cases\nThis linear regression model can be applied in various scenarios where prediction of a continuous outcome is required, such as:\n- Insurance premium calculations based on driver behavior and risk factors.\n- Estimating the economic impact of variations in traffic incidents.\n\n## Contributing\nFor contributions, please submit a pull request with detailed changes.\n\n## License\nThis project is licensed under the MIT License. See the LICENSE file for details.\n\n---"
     }
     ```
+
 ```
 
 ## Common Errors
