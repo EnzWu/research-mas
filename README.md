@@ -583,6 +583,7 @@ if __name__ == "__main__":
 </details>
 
 The result would be:
+1.ConfigExtractorAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -633,6 +634,7 @@ The result would be:
 ```
 </details>
 
+2.DataCleanerAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -648,6 +650,7 @@ The result would be:
 
 ```
 </details>
+2.DataCleanerAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -766,6 +769,8 @@ The result would be:
 ```
 </details>
 
+3.ModelerAgent
+
 <details>
 <summary><strong>Click to expand</strong></summary>
     
@@ -861,6 +866,8 @@ The result would be:
 
 ```
 </details>
+
+3.ModelerAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1156,6 +1163,8 @@ The result would be:
 ```
 </details>
 
+4.AnalysisAgent
+
 <details>
 <summary><strong>Click to expand</strong></summary>
     
@@ -1305,6 +1314,8 @@ The result would be:
 
 ```
 </details>
+
+4.AnalysisAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
@@ -1643,6 +1654,8 @@ The result would be:
 ```
 </details>
 
+5.VisualizingAgent
+
 <details>
 <summary><strong>Click to expand</strong></summary>
     
@@ -1737,6 +1750,8 @@ The result would be:
 ```
 </details>
 
+5.VisualizingAgent
+
 <details>
 <summary><strong>Click to expand</strong></summary>
     
@@ -1775,6 +1790,8 @@ The result would be:
     dtype: float64}
 ```
 </details>
+
+6.ReportAgent
 
 <details>
 <summary><strong>Click to expand</strong></summary>
