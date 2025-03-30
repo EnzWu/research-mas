@@ -30,21 +30,16 @@ from contextlib import asynccontextmanager
 ## Message Protocal
 The message protocol for this workflow is a text message containing agent response and/or code execution result if any that agents will use to relay their work.
 
-<details>
-<summary><strong>Click to expand</strong></summary>
     
 ```python
 @dataclass
 class Message:
     content: str
 ```
-</details>
 
 ## Topics
 Each topic is named after the agent that publishes it, and the subscription relationship would pass the message published down to the next agent.
 
-<details>
-<summary><strong>Click to expand</strong></summary>
 
 ```python
 config_extractor_topic_type = "ConfigExtractorAgent"
@@ -54,7 +49,6 @@ analysis_topic_type = "AnalysisAgent"
 visualization_topic_type = "VisualizingAgent"
 summary_topic_type = "ReportAgent"
 ```
-</details>
 
 ## Agents
 A type_subscription decorator is defined before each agent class to specify the topic type it is subscribed to.
@@ -493,8 +487,6 @@ class ReportAgent(RoutedAgent):
 ## Workflow
 Now we can register the agents to the runtime. Because we used the type_subscription decorator, the runtime will automatically subscribe the agents to the correct topics. Besides, we can set up functions and tools for later dynamic code execution.
 
-<details>
-<summary><strong>Click to expand</strong></summary>
     
 ```python
 load_dotenv()
@@ -548,7 +540,6 @@ async def register_agents():
     await ReportAgent.register(
         runtime, type=summary_topic_type, factory=lambda: ReportAgent(model_client=model_client,tool=data_cleaner_tool_schema))
 ```
-</details>
 
 ## Run the Workflow
 We can run the workflow by take in a user query and publish it to the ConfigExtractorAgent.
@@ -651,6 +642,7 @@ DataCleanerAgent
 
 ```
 </details>
+
 2-ed Agent Code Execution Result
 
 <details>
