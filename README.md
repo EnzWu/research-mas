@@ -632,6 +632,12 @@ The result would be:
     ```
 ```
 </details>
+
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+    
+```python
     --------------------------------------------------------------------------------
     DataCleanerAgent:
     [FunctionCall(id='call_vRtHP2wwNcVsyohQkwyUQmTC', arguments='{"code":"import pandas as pd\\n\\n# Parameters\\nfile_path = \'https://raw.githubusercontent.com/fivethirtyeight/data/master/bad-drivers/bad-drivers.csv\'\\ncleaning_parameters = {\\n    \'handle_missing_values\': \'remove\'\\n}\\n\\n# Step 1: Load the dataset\\ntry:\\n    data = pd.read_csv(file_path)\\n    print(\'Dataset loaded successfully. Shape:\', data.shape)\\nexcept Exception as e:\\n    print(\'Error loading dataset:\', e)\\n\\n# Step 2: Clean the dataset based on cleaning parameters\\nif cleaning_parameters[\'handle_missing_values\'] == \'remove\':\\n    # Remove rows with any missing values\\n    cleaned_data = data.dropna()\\n    print(\'Missing values removed. New shape:\', cleaned_data.shape)\\nelse:\\n    cleaned_data = data\\n\\n# Step 3: Save the cleaned dataset to a CSV file\\ncleaned_data.to_csv(\'cleaned_dataset.csv\', index=False)\\nprint(\'Cleaned dataset saved as cleaned_dataset.csv\')"}', name='CodeExecutor')]
@@ -639,6 +645,9 @@ The result would be:
     Dataset loaded successfully. Shape: (51, 8)
     Missing values removed. New shape: (51, 8)
     Cleaned dataset saved as cleaned_dataset.csv
+
+```
+</details>
     --------------------------------------------------------------------------------
     DataCleanerAgent:
     Code executed. Result:
