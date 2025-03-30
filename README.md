@@ -32,6 +32,8 @@ class Message:
 
 ## Topics
 Each topic is named after the agent that publishes it, and the subscription relationship would pass the message published down to the next agent.
+<details>
+<summary><strong>Click to expand and view all</strong></summary>
 ```python
 config_extractor_topic_type = "ConfigExtractorAgent"
 data_clean_topic_type = "DataCleanerAgent"
@@ -40,6 +42,7 @@ analysis_topic_type = "AnalysisAgent"
 visualization_topic_type = "VisualizingAgent"
 summary_topic_type = "ReportAgent"
 ```
+</details> 
 
 ## Agents
 A type_subscription decorator is defined before each agent class to specify the topic type it is subscribed to.
