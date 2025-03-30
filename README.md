@@ -44,7 +44,7 @@ analysis_topic_type = "AnalysisAgent"
 visualization_topic_type = "VisualizingAgent"
 summary_topic_type = "ReportAgent"
 ```
-
+</details>
 ## Agents
 A type_subscription decorator is defined before each agent class to specify the topic type it is subscribed to.
 
